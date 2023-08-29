@@ -26,9 +26,9 @@ spring:
         # https://stackoverflow.com/questions/21257819/what-is-the-difference-between-hibernate-jdbc-fetch-size-and-hibernate-jdbc-batc
         jdbc.batch_size: 20
   datasource:
-    url: jdbc:postgresql://localhost:5432/jira
-    username: jira
-    password: JiraRush
+    url: jdbc:postgresql://localhost:5430/jira2
+    username: jira2
+    password: JiraRush2
 
   liquibase:
     changeLog: "classpath:db/changelog.sql"
@@ -117,7 +117,7 @@ spring:
   thymeleaf.check-template-location: false
 
   mvc.throw-exception-if-no-handler-found: true
-  web.resources.add-mappings: false
+  web.resources-external.add-mappings: false
 
 logging:
   level:

@@ -8,9 +8,12 @@
     - [Spring Modulith - Reference documentation](https://docs.spring.io/spring-modulith/docs/current-SNAPSHOT/reference/html/)
 
 ```
-  url: jdbc:postgresql://localhost:5432/jira
-  username: jira
-  password: JiraRush
+  url: jdbc:postgresql://localhost:5430/jira2
+  username: jira2
+  password: JiraRush2
+```
+```
+docker run -p 5430:5432 --name postgres-db2 -e POSTGRES_USER=jira2 -e POSTGRES_PASSWORD=JiraRush2 -e POSTGRES_DB=jira2 -e PGDATA=/var/lib/postgresql/data/pgdata2 -v ./pgdata2:/var/lib/postgresql/data -d postgres
 ```
 
 - Есть 2 общие таблицы, на которых не fk

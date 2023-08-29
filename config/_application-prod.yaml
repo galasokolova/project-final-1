@@ -3,7 +3,7 @@ app:
   host-url: http://localhost
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/jira
-    username: jira
-    password: JiraRush
+    url: jdbc:postgresql://localhost:5430/jira2
+    username: jira2
+    password: JiraRush2
 
